@@ -1,6 +1,11 @@
-os: windows
 language: cpp
+compiler: g++
+
+dist: focal
+env:
+  - MSBUILD_PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin"
 script:
+ 
   - make
   - make test
   - make runtest
